@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Search from "./Components/Search";
+import MainPage from "./Components/MainPage";
 
 function App() {
   return (
     <React.Fragment>
-      <Search />
+      <MainPage />
     </React.Fragment>
   );
 }
