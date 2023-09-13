@@ -1,0 +1,29 @@
+.card {
+  background-color: black;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.innercard {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.cardtext {
+  background-color: black;
+  color: white;
+  padding: 0rem 1.2rem 1.2rem 1.2rem;
+  margin-bottom: 0px !important;
+}
+
+.maincard {
+  margin: 0.5rem;
+}
+
+.cardbutton {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
