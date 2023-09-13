@@ -1,0 +1,30 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: green;
+  align-items: center;
+}
+
+.button {
+  background-color: black;
+  color: green;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input {
+  display: inherit;
+  padding: 4px;
+}
+
+.icon {
+  padding: 0.5rem;
+}
+
+.image {
+  height: 1rem;
+  cursor: pointer;
+  width: 1rem;
+}
