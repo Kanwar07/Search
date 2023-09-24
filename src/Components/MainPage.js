@@ -5,6 +5,7 @@ import HeroImage from "./HeroImage";
 import TopAlbums from "./TopAlbums";
 import NewAlbums from "./NewAlbums";
 import Songs from "./Songs";
+import AccordionPage from "./AccordionPage";
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
       <TopAlbums />
       <NewAlbums />
       <Songs />
+      <AccordionPage />
     </React.Fragment>
   );
 }
