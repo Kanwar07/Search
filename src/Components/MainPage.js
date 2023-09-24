@@ -3,6 +3,7 @@ import "./MainPage.css";
 import Search from "./Search";
 import HeroImage from "./HeroImage";
 import TopAlbums from "./TopAlbums";
+import NewAlbums from "./NewAlbums";
 
 function MainPage() {
   return (
@@ -10,6 +11,7 @@ function MainPage() {
       <Search />
       <HeroImage />
       <TopAlbums />
+      <NewAlbums />
     </React.Fragment>
   );
 }
