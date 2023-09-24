@@ -1,12 +1,9 @@
 .card {
   background-color: black;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .innercard {
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .cardtext {
@@ -14,6 +11,7 @@
   color: white;
   padding: 0rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 0px !important;
+  border-radius: 0px !important;
 }
 
 .maincard {

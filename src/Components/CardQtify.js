@@ -1,17 +1,16 @@
 import React from "react";
 import "./CardQtify.css";
 import { Card, CardMedia, Typography } from "@mui/material";
-import Headphones from "../Assets/headphones.png";
 
-function CardQtify() {
+function CardQtify(props) {
   return (
-    <Card sx={{ maxWidth: 300 }} className="maincard">
+    <Card sx={{ maxWidth: "auto" }} className="maincard">
       <div className="card">
-        <Card sx={{ maxWidth: 250 }} className="innercard">
+        <Card sx={{ maxWidth: "auto" }} className="innercard">
           <CardMedia
             component="img"
             height="250"
-            image={Headphones}
+            image={props.image}
             alt="image"
           />
           <Typography
@@ -20,7 +19,7 @@ function CardQtify() {
             component="div"
             style={{ paddingLeft: 10 }}
           >
-            <button className="cardbutton">100M Follows</button>
+            <button className="cardbutton">{props.follows}</button>
           </Typography>
         </Card>
       </div>
@@ -30,7 +29,7 @@ function CardQtify() {
         component="div"
         className="cardtext"
       >
-        New Bollywood
+        {props.title}
       </Typography>
     </Card>
   );
