@@ -3,9 +3,16 @@ import axios from "axios";
 import CardQtify from "./CardQtify";
 import { Grid } from "@mui/material";
 import "./NewAlbums.css";
+import { Button } from "@mui/material";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
 function NewAlbums() {
   const [newalbums, setnewalbums] = useState([]);
+  const [collapsenewalbums, setcollapsenewalbums] = useState(true);
 
   const fetchapi = () => {
     axios
@@ -15,21 +22,65 @@ function NewAlbums() {
       });
   };
 
+  const handlecollapsenewalbums = () => {
+    setcollapsenewalbums(!collapsenewalbums);
+  };
+
   useEffect(() => {
     fetchapi();
   });
 
   return (
-    <Grid container spacing={2} className="newalbumdiv">
-      {newalbums.map((data) => {
-        const { id, image, follows, title } = data;
-        return (
-          <Grid item key={id} xs={12} sm={4} md={3} lg={2}>
-            <CardQtify id={id} image={image} follows={follows} title={title} />
+    <div>
+      <div className="head">
+        <h3 style={{ color: "white" }}>New Albums</h3>
+        <Button className="buttonnewalbum" onClick={handlecollapsenewalbums}>
+          Show All
+        </Button>
+      </div>
+      {!collapsenewalbums ? (
+        <Grid container spacing={2} className="newalbumdiv">
+          {newalbums.map((data) => {
+            const { id, image, follows, title } = data;
+            return (
+              <Grid item key={id} xs={12} sm={4} md={3} lg={2}>
+                <CardQtify
+                  id={id}
+                  image={image}
+                  follows={follows}
+                  title={title}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
+      ) : (
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          slidesPerView={6}
+          className="myswiper"
+        >
+          <Grid container spacing={2} className="newalbumdiv">
+            {newalbums.map((data) => {
+              const { id, image, follows, title } = data;
+              return (
+                <Grid item key={id} xs={12} sm={4} md={3} lg={2}>
+                  <SwiperSlide key={id}>
+                    <CardQtify
+                      id={id}
+                      image={image}
+                      follows={follows}
+                      title={title}
+                    />
+                  </SwiperSlide>
+                </Grid>
+              );
+            })}
           </Grid>
-        );
-      })}
-    </Grid>
+        </Swiper>
+      )}
+    </div>
   );
 }
 

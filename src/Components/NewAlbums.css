@@ -1,3 +1,19 @@
 .newalbumdiv {
-  background-color: black;
+  background-color: #121212;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+  color: #34c94b;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.buttonnewalbum {
+  color: #34c94b !important;
+}
+
+.myswiper {
+  background-color: #121212;
 }

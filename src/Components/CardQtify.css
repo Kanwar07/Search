@@ -1,5 +1,5 @@
 .card {
-  background-color: black;
+  background-color: #121212;
 }
 
 .innercard {
@@ -7,8 +7,8 @@
 }
 
 .cardtext {
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #ffff;
   padding: 0rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 0px !important;
   border-radius: 0px !important;
@@ -20,7 +20,7 @@
 
 .cardbutton {
   background-color: black;
-  color: white;
+  color: #ffff;
   padding: 0.5rem;
   border-radius: 8px;
   font-size: 1.2rem;

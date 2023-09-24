@@ -1,3 +1,17 @@
 .topalbumdiv {
-  background-color: black !important;
+  background-color: #121212 !important;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+}
+
+.buttontopalbum {
+  color: #34c94b !important;
+}
+
+.myswiper {
+  background-color: #121212;
 }

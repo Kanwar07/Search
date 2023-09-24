@@ -1,17 +1,16 @@
-.heroimage {
-  height: 270px;
+.accordion {
   background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 4rem 10rem 10rem 10rem;
 }
 
-.text {
+.faq {
   color: #fff;
   text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding-bottom: 2rem;
 }

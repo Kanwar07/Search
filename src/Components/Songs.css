@@ -1,3 +1,14 @@
 .songsdiv {
-  background-color: black !important;
+  background-color: #121212 !important;
+}
+
+.genreouter {
+  background-color: #121212;
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 2rem 1rem 2rem;
+}
+
+.myswiper {
+  background-color: #121212;
 }
