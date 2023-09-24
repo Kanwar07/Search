@@ -4,6 +4,7 @@ import Search from "./Search";
 import HeroImage from "./HeroImage";
 import TopAlbums from "./TopAlbums";
 import NewAlbums from "./NewAlbums";
+import Songs from "./Songs";
 
 function MainPage() {
   return (
@@ -12,6 +13,7 @@ function MainPage() {
       <HeroImage />
       <TopAlbums />
       <NewAlbums />
+      <Songs />
     </React.Fragment>
   );
 }
