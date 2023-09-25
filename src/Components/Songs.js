@@ -39,7 +39,7 @@ function Songs() {
   useEffect(() => {
     fetchsongsapi();
     fetchgenreapi();
-  });
+  }, []);
 
   return (
     <div style={{ backgroundColor: "#121212" }}>

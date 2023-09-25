@@ -27,7 +27,7 @@ function TopAlbums() {
 
   useEffect(() => {
     fetchapi();
-  });
+  }, []);
 
   return (
     <div>
@@ -48,6 +48,7 @@ function TopAlbums() {
                   image={image}
                   follows={follows}
                   title={title}
+                  songs={data.songs.length}
                 />
               </Grid>
             );
@@ -71,6 +72,7 @@ function TopAlbums() {
                       image={image}
                       follows={follows}
                       title={title}
+                      songs={data.songs.length}
                     />
                   </SwiperSlide>
                 </Grid>
